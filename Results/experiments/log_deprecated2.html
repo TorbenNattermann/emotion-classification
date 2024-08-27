@@ -1,0 +1,355 @@
+
+        <table border='1'>
+            <tr>
+                <th>Date</th>
+                <th>Data</th>
+                <th>Samples</th>
+                <th>Features</th>
+                <th>N_features</th>
+                <th>Model</th>
+                <th>Label</th>
+                <th>N_label</th>
+                <th>Train_global</th>
+                <th>Val_global</th>
+                <th>AUC Train_local</th>
+                <th>AUC Val_local</th>
+            </tr>
+    
+    <tr>
+        <td>2024-01-08 12:34:11</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>6353</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['neg. surprise' 'disgust' 'joy' 'fear' 'sadness' 'no emotion'
+ 'pos. surprise' 'anger' 'positive_anticipation_including_optimism'
+ 'negative_anticipation_including_pessimism' 'annoyance' 'guilt']</td>
+        <td>12 emotions</td>
+        <td>F1: 0.5657; accuracy: 0.6169</td>
+        <td>F1: 0.2753; accuracy: 0.3186</td>
+        <td>{"anger": 0.8506, "annoyance": 0.0473, "disgust": 0.0787, "fear": 0.8838, "guilt": 0.227, "joy": 0.9603, "neg. surprise": 0.9707, "negative_anticipation_including_pessimism": 0.0398, "no emotion": 0.7328, "pos. surprise": 0.8661, "positive_anticipation_including_optimism": 0.0343, "sadness": 0.8393}</td>
+        <td>{"anger": 0.6091, "annoyance": 0.0, "disgust": 0.0, "fear": 0.6182, "guilt": 0.0, "joy": 0.7232, "neg. surprise": 0.8506, "negative_anticipation_including_pessimism": 0.0, "no emotion": 0.1081, "pos. surprise": 0.2521, "positive_anticipation_including_optimism": 0.0, "sadness": 0.4458}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 11:31:55</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>3167</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['fear' 'joy' 'anger' 'no emotion' 'sadness']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9763; accuracy: 0.9763; AUC: 0.9993</td>
+        <td>F1: 0.5902; accuracy: 0.6041; AUC: 0.8637</td>
+        <td>{"anger": 0.9987, "fear": 0.9991, "joy": 0.9997, "no emotion": 0.9999, "sadness": 0.9988}</td>
+        <td>{"anger": 0.839, "fear": 0.7954, "joy": 0.8734, "no emotion": 0.378, "sadness": 0.7107}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 11:51:27</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>3167</td>
+        <td>ada embeddings 300 dims, tfidf 150 dims, nrc_corpus</td>
+        <td>467</td>
+        <td>SVM</td>
+        <td>['fear' 'joy' 'anger' 'no emotion' 'sadness']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9694; accuracy: 0.9696; AUC: 0.9993</td>
+        <td>F1: 0.554; accuracy: 0.571; AUC: 0.8527</td>
+        <td>{"anger": 0.9992, "fear": 0.999, "joy": 0.9997, "no emotion": 1.0, "sadness": 0.9988}</td>
+        <td>{"anger": 0.3946, "fear": 0.4417, "joy": 0.3581, "no emotion": 0.4694, "sadness": 0.8373}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 11:56:59</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>3167</td>
+        <td>ada embeddings 300 dims, tfidf 150 dims, nrc_corpus</td>
+        <td>467</td>
+        <td>RF</td>
+        <td>['fear' 'joy' 'anger' 'no emotion' 'sadness']</td>
+        <td>5 emotions</td>
+        <td>F1: 1.0; accuracy: 1.0; AUC: 1.0</td>
+        <td>F1: 0.5784; accuracy: 0.5883; AUC: 0.8538</td>
+        <td>{"anger": 1.0, "fear": 1.0, "joy": 1.0, "no emotion": 1.0, "sadness": 1.0}</td>
+        <td>{"anger": 0.3919, "fear": 0.4826, "joy": 0.3669, "no emotion": 0.4176, "sadness": 0.8276}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 14:05:08</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>3167</td>
+        <td>ada embeddings 300 dims, tfidf 150 dims, nrc_corpus</td>
+        <td>467</td>
+        <td>RF</td>
+        <td>['fear' 'joy' 'anger' 'no emotion' 'sadness']</td>
+        <td>5 emotions</td>
+        <td>F1: 1.0; accuracy: 1.0; AUC: 1.0</td>
+        <td>F1: 0.5784; accuracy: 0.5883; AUC: 0.8538</td>
+        <td>{"anger": 1.0, "fear": 1.0, "joy": 1.0, "no emotion": 1.0, "sadness": 1.0}</td>
+        <td>{"anger": 0.8708, "fear": 0.8527, "joy": 0.8791, "no emotion": 0.8388, "sadness": 0.8276}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 14:46:28</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>3167</td>
+        <td>ada embeddings 300 dims, tfidf 150 dims, nrc_corpus</td>
+        <td>467</td>
+        <td>RF</td>
+        <td>['fear' 'joy' 'anger' 'no emotion' 'sadness']</td>
+        <td>5 emotions</td>
+        <td>F1: 1.0; accuracy: 1.0; AUC: 1.0</td>
+        <td>F1: 0.5618; accuracy: 0.5694; AUC: 0.8483</td>
+        <td>{"anger": 1.0, "fear": 1.0, "joy": 1.0, "no emotion": 1.0, "sadness": 1.0}</td>
+        <td>{"anger": 0.8699, "fear": 0.8466, "joy": 0.8847, "no emotion": 0.8402, "sadness": 0.8}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 15:35:12</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>3167</td>
+        <td>ada embeddings, tfidf 1500 dims, nrc_corpus</td>
+        <td>3053</td>
+        <td>SVM</td>
+        <td>['fear' 'joy' 'anger' 'no emotion' 'sadness']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9591; accuracy: 0.9593; AUC: 0.9992</td>
+        <td>F1: 0.6103; accuracy: 0.6372; AUC: 0.8836</td>
+        <td>{"anger": 0.9986, "fear": 0.9991, "joy": 0.9994, "no emotion": 1.0, "sadness": 0.9988}</td>
+        <td>{"anger": 0.9084, "fear": 0.8866, "joy": 0.9345, "no emotion": 0.8197, "sadness": 0.8689}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 16:20:26</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>5082</td>
+        <td>ada embeddings</td>
+        <td>1536</td>
+        <td>SVM</td>
+        <td>['joy' 'anger' 'annoyance' 'negative_anticipation_including_pessimism'
+ 'neg. surprise' 'pos. surprise' 'disgust' 'fear' 'no emotion' 'guilt'
+ 'sadness' 'positive_anticipation_including_optimism']</td>
+        <td>12 emotions</td>
+        <td>F1: 0.9946; accuracy: 0.9946; AUC: 1.0</td>
+        <td>F1: 0.3549; accuracy: 0.3894; AUC: 0.8043</td>
+        <td>{"anger": 1.0, "annoyance": 1.0, "disgust": 1.0, "fear": 1.0, "guilt": 1.0, "joy": 0.9999, "neg. surprise": 1.0, "negative_anticipation_including_pessimism": 1.0, "no emotion": 1.0, "pos. surprise": 1.0, "positive_anticipation_including_optimism": 1.0, "sadness": 0.9997}</td>
+        <td>{"anger": 0.8429, "annoyance": 0.6129, "disgust": 0.7823, "fear": 0.8858, "guilt": 0.9046, "joy": 0.9349, "neg. surprise": 0.6788, "negative_anticipation_including_pessimism": 0.7482, "no emotion": 0.8259, "pos. surprise": 0.8095, "positive_anticipation_including_optimism": 0.7863, "sadness": 0.8401}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 16:37:40</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9832; accuracy: 0.9832; AUC: 0.9997</td>
+        <td>F1: 0.5747; accuracy: 0.5976; AUC: 0.8547</td>
+        <td>{"anger": 0.9994, "fear": 0.9996, "joy": 0.9999, "no emotion": 1.0, "sadness": 0.9997}</td>
+        <td>{"anger": 0.8926, "fear": 0.8507, "joy": 0.9158, "no emotion": 0.7689, "sadness": 0.8452}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 16:40:40</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9832; accuracy: 0.9832; AUC: 0.9997</td>
+        <td>F1: 0.5747; accuracy: 0.5976; AUC: 0.8546</td>
+        <td>{"anger": 0.9994, "fear": 0.9996, "joy": 0.9999, "no emotion": 1.0, "sadness": 0.9997}</td>
+        <td>{"anger": 0.8924, "fear": 0.8512, "joy": 0.9156, "no emotion": 0.7681, "sadness": 0.8458}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 16:50:18</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9832; accuracy: 0.9832; AUC: 0.9997</td>
+        <td>F1: 0.5747; accuracy: 0.5976; AUC: 0.8547</td>
+        <td>{"anger": 0.9994, "fear": 0.9996, "joy": 0.9999, "no emotion": 1.0, "sadness": 0.9997}</td>
+        <td>{"anger": 0.8925, "fear": 0.8506, "joy": 0.9158, "no emotion": 0.7688, "sadness": 0.8456}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-09 16:54:52</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9832; accuracy: 0.9832; AUC: 0.9997</td>
+        <td>F1: 0.5747; accuracy: 0.5976; AUC: 0.8547</td>
+        <td>{"anger": 0.9994, "fear": 0.9996, "joy": 0.9999, "no emotion": 1.0, "sadness": 0.9997}</td>
+        <td>{"anger": 0.8922, "fear": 0.8507, "joy": 0.9157, "no emotion": 0.7694, "sadness": 0.8454}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 10:01:25</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9832; Accuracy: 0.9832; Precision = 0.9832; Recall = 0.9832, AUC: 0.9995</td>
+        <td>F1: 0.5976; Accuracy: 0.5976; Precision = 0.5976; Recall = 0.5976, AUC: 0.8599</td>
+        <td>{"anger": "ROC: 0.9994, ACC: 0.9891, F1: 0.9773, Precision: 0.9633, Recall: 0.9916", "fear": "ROC: 0.9996, ACC: 0.9931, F1: 0.9844, Precision: 0.9822, Recall: 0.9866", "joy": "ROC: 0.9999, ACC: 0.9965, F1: 0.9911, Precision: 0.9899, Recall: 0.9924", "no emotion": "ROC: 1.0, ACC: 0.9946, F1: 0.9819, Precision: 1.0, Recall: 0.9645", "sadness": "ROC: 0.9997, ACC: 0.9931, F1: 0.9823, Precision: 0.9898, Recall: 0.9749"}</td>
+        <td>{"anger": "ROC: 0.8924, ACC: 0.8323, F1: 0.6667, Precision: 0.5903, Recall: 0.7658", "fear": "ROC: 0.8512, ACC: 0.8225, F1: 0.6018, Precision: 0.5913, Recall: 0.6126", "joy": "ROC: 0.9158, ACC: 0.86, F1: 0.7029, Precision: 0.6462, Recall: 0.7706", "no emotion": "ROC: 0.769, ACC: 0.8284, F1: 0.2689, Precision: 0.5161, Recall: 0.1818", "sadness": "ROC: 0.8458, ACC: 0.8521, F1: 0.5714, Precision: 0.5747, Recall: 0.5682"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 10:26:34</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada embeddings 300 dims</td>
+        <td>300</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9832; Accuracy: 0.9832; Precision = 0.9835; Recall = 0.9832, AUC: 0.9997</td>
+        <td>F1: 0.5747; Accuracy: 0.5976; Precision = 0.5869; Recall = 0.5976, AUC: 0.8588</td>
+        <td>{"anger": "ROC: 0.9994, F1: 0.9773, Precision: 0.9633, Recall: 0.9916", "fear": "ROC: 0.9996, F1: 0.9844, Precision: 0.9822, Recall: 0.9866", "joy": "ROC: 0.9999, F1: 0.9911, Precision: 0.9899, Recall: 0.9924", "no emotion": "ROC: 1.0, F1: 0.9819, Precision: 1.0, Recall: 0.9645", "sadness": "ROC: 0.9997, F1: 0.9823, Precision: 0.9898, Recall: 0.9749"}</td>
+        <td>{"anger": "ROC: 0.8924, F1: 0.6667, Precision: 0.5903, Recall: 0.7658", "fear": "ROC: 0.8509, F1: 0.6018, Precision: 0.5913, Recall: 0.6126", "joy": "ROC: 0.9156, F1: 0.7029, Precision: 0.6462, Recall: 0.7706", "no emotion": "ROC: 0.7695, F1: 0.2689, Precision: 0.5161, Recall: 0.1818", "sadness": "ROC: 0.8456, F1: 0.5714, Precision: 0.5747, Recall: 0.5682"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 11:38:08</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>ada_embeddings 300_dims&tfidf_150_dims&linguistics&nrc</td>
+        <td>471</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.9777; Accuracy: 0.9778; Precision = 0.978; Recall = 0.9778, AUC: 0.9994</td>
+        <td>F1: 0.5579; Accuracy: 0.5819; Precision = 0.5767; Recall = 0.5819, AUC: 0.8578</td>
+        <td>{"anger": "ROC: 0.9995, F1: 0.9813, Precision: 0.9732, Recall: 0.9895", "fear": "ROC: 0.9992, F1: 0.9798, Precision: 0.982, Recall: 0.9776", "joy": "ROC: 0.9998, F1: 0.985, Precision: 0.9728, Recall: 0.9975", "no emotion": "ROC: 1.0, F1: 0.9718, Precision: 1.0, Recall: 0.9452", "sadness": "ROC: 0.9988, F1: 0.9686, Precision: 0.9674, Recall: 0.9698"}</td>
+        <td>{"anger": "ROC: 0.8765, F1: 0.6052, Precision: 0.5125, Recall: 0.7387", "fear": "ROC: 0.8562, F1: 0.5888, Precision: 0.6117, Recall: 0.5676", "joy": "ROC: 0.9071, F1: 0.7054, Precision: 0.6439, Recall: 0.7798", "no emotion": "ROC: 0.7774, F1: 0.2414, Precision: 0.5, Recall: 0.1591", "sadness": "ROC: 0.8556, F1: 0.593, Precision: 0.6071, Recall: 0.5795"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 11:43:39</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>linguistics&nrc</td>
+        <td>20</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.5764; Accuracy: 0.5844; Precision = 0.5932; Recall = 0.5844, AUC: 0.8363</td>
+        <td>F1: 0.3784; Accuracy: 0.4004; Precision = 0.4274; Recall = 0.4004, AUC: 0.6793</td>
+        <td>{"anger": "ROC: 0.8607, F1: 0.6468, Precision: 0.5557, Recall: 0.7736", "fear": "ROC: 0.8211, F1: 0.5758, Precision: 0.6686, Recall: 0.5056", "joy": "ROC: 0.867, F1: 0.6205, Precision: 0.5617, Recall: 0.6929", "no emotion": "ROC: 0.7877, F1: 0.4625, Precision: 0.5969, Recall: 0.3774", "sadness": "ROC: 0.8314, F1: 0.5378, Precision: 0.5819, Recall: 0.5"}</td>
+        <td>{"anger": "ROC: 0.7014, F1: 0.4221, Precision: 0.3299, Recall: 0.5856", "fear": "ROC: 0.6937, F1: 0.3756, Precision: 0.4302, Recall: 0.3333", "joy": "ROC: 0.7369, F1: 0.5019, Precision: 0.4333, Recall: 0.5963", "no emotion": "ROC: 0.5642, F1: 0.1835, Precision: 0.4762, Recall: 0.1136", "sadness": "ROC: 0.6767, F1: 0.3688, Precision: 0.4906, Recall: 0.2955"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 11:58:11</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>tfidf_150_dims</td>
+        <td>150</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.6084; Accuracy: 0.6081; Precision = 0.6618; Recall = 0.6081, AUC: 0.8063</td>
+        <td>F1: 0.3114; Accuracy: 0.3333; Precision = 0.3545; Recall = 0.3333, AUC: 0.6527</td>
+        <td>{"anger": "ROC: 0.8704, F1: 0.7138, Precision: 0.7421, Recall: 0.6876", "fear": "ROC: 0.8445, F1: 0.6599, Precision: 0.7625, Recall: 0.5817", "joy": "ROC: 0.8459, F1: 0.549, Precision: 0.4134, Recall: 0.8173", "no emotion": "ROC: 0.537, F1: 0.4035, Precision: 0.6301, Recall: 0.2968", "sadness": "ROC: 0.8572, F1: 0.6425, Precision: 0.7233, Recall: 0.5779"}</td>
+        <td>{"anger": "ROC: 0.6919, F1: 0.4417, Precision: 0.4109, Recall: 0.4775", "fear": "ROC: 0.622, F1: 0.3265, Precision: 0.3765, Recall: 0.2883", "joy": "ROC: 0.6867, F1: 0.3067, Precision: 0.463, Recall: 0.2294", "no emotion": "ROC: 0.5646, F1: 0.0909, Precision: 0.2273, Recall: 0.0568", "sadness": "ROC: 0.6879, F1: 0.3541, Precision: 0.2488, Recall: 0.6136"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 13:32:43</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>tfidf_150_dims</td>
+        <td>150</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.6084; Accuracy: 0.6081; Precision = 0.6618; Recall = 0.6081, AUC: 0.8537</td>
+        <td>F1: 0.3114; Accuracy: 0.3333; Precision = 0.3545; Recall = 0.3333, AUC: 0.6624</td>
+        <td>{"anger": "ROC: 0.882, F1: 0.7138, Precision: 0.7421, Recall: 0.6876", "fear": "ROC: 0.8595, F1: 0.6599, Precision: 0.7625, Recall: 0.5817", "joy": "ROC: 0.8603, F1: 0.549, Precision: 0.4134, Recall: 0.8173", "no emotion": "ROC: 0.7667, F1: 0.4035, Precision: 0.6301, Recall: 0.2968", "sadness": "ROC: 0.8744, F1: 0.6425, Precision: 0.7233, Recall: 0.5779"}</td>
+        <td>{"anger": "ROC: 0.6945, F1: 0.4417, Precision: 0.4109, Recall: 0.4775", "fear": "ROC: 0.6282, F1: 0.3265, Precision: 0.3765, Recall: 0.2883", "joy": "ROC: 0.6976, F1: 0.3067, Precision: 0.463, Recall: 0.2294", "no emotion": "ROC: 0.593, F1: 0.0909, Precision: 0.2273, Recall: 0.0568", "sadness": "ROC: 0.6909, F1: 0.3541, Precision: 0.2488, Recall: 0.6136"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 13:42:21</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>tfidf_150_dims</td>
+        <td>150</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.6084; Accuracy: 0.6081; Precision = 0.6618; Recall = 0.6081, AUC: 0.8258</td>
+        <td>F1: 0.3114; Accuracy: 0.3333; Precision = 0.3545; Recall = 0.3333, AUC: 0.661</td>
+        <td>{"anger": "ROC: 0.8722, F1: 0.7138, Precision: 0.7421, Recall: 0.6876", "fear": "ROC: 0.8454, F1: 0.6599, Precision: 0.7625, Recall: 0.5817", "joy": "ROC: 0.8496, F1: 0.549, Precision: 0.4134, Recall: 0.8173", "no emotion": "ROC: 0.6498, F1: 0.4035, Precision: 0.6301, Recall: 0.2968", "sadness": "ROC: 0.8616, F1: 0.6425, Precision: 0.7233, Recall: 0.5779"}</td>
+        <td>{"anger": "ROC: 0.6949, F1: 0.4417, Precision: 0.4109, Recall: 0.4775", "fear": "ROC: 0.6273, F1: 0.3265, Precision: 0.3765, Recall: 0.2883", "joy": "ROC: 0.698, F1: 0.3067, Precision: 0.463, Recall: 0.2294", "no emotion": "ROC: 0.5863, F1: 0.0909, Precision: 0.2273, Recall: 0.0568", "sadness": "ROC: 0.6895, F1: 0.3541, Precision: 0.2488, Recall: 0.6136"}</td>
+    </tr>
+    
+    <tr>
+        <td>2024-01-11 13:58:49</td>
+        <td>GNE_SEM_GER dataset</td>
+        <td>2533</td>
+        <td>linguistics&nrc</td>
+        <td>20</td>
+        <td>SVM</td>
+        <td>['sadness' 'anger' 'no emotion' 'joy' 'fear']</td>
+        <td>5 emotions</td>
+        <td>F1: 0.5764; Accuracy: 0.5844; Precision = 0.5932; Recall = 0.5844, AUC: 0.8378</td>
+        <td>F1: 0.3784; Accuracy: 0.4004; Precision = 0.4274; Recall = 0.4004, AUC: 0.6802</td>
+        <td>{"anger": "ROC: 0.8612, F1: 0.6468, Precision: 0.5557, Recall: 0.7736", "fear": "ROC: 0.8207, F1: 0.5758, Precision: 0.6686, Recall: 0.5056", "joy": "ROC: 0.8682, F1: 0.6205, Precision: 0.5617, Recall: 0.6929", "no emotion": "ROC: 0.7949, F1: 0.4625, Precision: 0.5969, Recall: 0.3774", "sadness": "ROC: 0.8325, F1: 0.5378, Precision: 0.5819, Recall: 0.5"}</td>
+        <td>{"anger": "ROC: 0.7021, F1: 0.4221, Precision: 0.3299, Recall: 0.5856", "fear": "ROC: 0.694, F1: 0.3756, Precision: 0.4302, Recall: 0.3333", "joy": "ROC: 0.7367, F1: 0.5019, Precision: 0.4333, Recall: 0.5963", "no emotion": "ROC: 0.5707, F1: 0.1835, Precision: 0.4762, Recall: 0.1136", "sadness": "ROC: 0.6747, F1: 0.3688, Precision: 0.4906, Recall: 0.2955"}</td>
+    </tr>
+    
+        <tr>
+            <td>2024-01-11 15:59:46</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>5082</td>
+            <td>linguistics&nrc</td>
+            <td>20</td>
+            <td>SVM</td>
+            <td>['joy' 'anger' 'annoyance' 'negative_anticipation_including_pessimism'
+ 'neg. surprise' 'pos. surprise' 'disgust' 'fear' 'no emotion' 'guilt'
+ 'sadness' 'positive_anticipation_including_optimism']</td>
+            <td>12 emotions</td>
+            <td>F1: 0.6462; Accuracy: 0.6435; Precision = 0.6549; Recall = 0.6435, AUC: 0.8284</td>
+            <td>F1: 0.1977; Accuracy: 0.2094; Precision = 0.1962; Recall = 0.2094, AUC: 0.6154</td>
+            <td>{"anger": "ROC: 0.8646, F1: 0.697, Precision: 0.7239, Recall: 0.6721", "annoyance": "ROC: 0.4222, F1: 0.6626, Precision: 0.733, Recall: 0.6045", "disgust": "ROC: 0.8922, F1: 0.6878, Precision: 0.7415, Recall: 0.6414", "fear": "ROC: 0.8701, F1: 0.6715, Precision: 0.7035, Recall: 0.6422", "guilt": "ROC: 0.9729, F1: 0.7282, Precision: 0.7075, Recall: 0.75", "joy": "ROC: 0.8308, F1: 0.6489, Precision: 0.6518, Recall: 0.646", "neg. surprise": "ROC: 0.7914, F1: 0.6688, Precision: 0.6959, Recall: 0.6437", "negative_anticipation_including_pessimism": "ROC: 0.9171, F1: 0.6385, Precision: 0.6612, Recall: 0.6173", "no emotion": "ROC: 0.8651, F1: 0.6362, Precision: 0.6724, Recall: 0.6037", "pos. surprise": "ROC: 0.8458, F1: 0.5763, Precision: 0.5301, Recall: 0.6312", "positive_anticipation_including_optimism": "ROC: 0.9032, F1: 0.5758, Precision: 0.5359, Recall: 0.6222", "sadness": "ROC: 0.8773, F1: 0.5784, Precision: 0.5029, Recall: 0.6806"}</td>
+            <td>{"anger": "ROC: 0.5877, F1: 0.2616, Precision: 0.2672, Recall: 0.2562", "annoyance": "ROC: 0.5296, F1: 0.0625, Precision: 0.0882, Recall: 0.0484", "disgust": "ROC: 0.5649, F1: 0.0465, Precision: 0.0667, Recall: 0.0357", "fear": "ROC: 0.6276, F1: 0.2579, Precision: 0.2018, Recall: 0.3571", "guilt": "ROC: 0.6515, F1: 0.1395, Precision: 0.1667, Recall: 0.12", "joy": "ROC: 0.702, F1: 0.3318, Precision: 0.3097, Recall: 0.3571", "neg. surprise": "ROC: 0.589, F1: 0.2386, Precision: 0.2615, Recall: 0.2194", "negative_anticipation_including_pessimism": "ROC: 0.5901, F1: 0.0238, Precision: 0.0294, Recall: 0.02", "no emotion": "ROC: 0.6329, F1: 0.2207, Precision: 0.2222, Recall: 0.2192", "pos. surprise": "ROC: 0.6148, F1: 0.1582, Precision: 0.1818, Recall: 0.14", "positive_anticipation_including_optimism": "ROC: 0.5864, F1: 0.0274, Precision: 0.0417, Recall: 0.0204", "sadness": "ROC: 0.6756, F1: 0.2258, Precision: 0.1918, Recall: 0.2745"}</td>
+        </tr>
+        
+        <tr>
+            <td>2024-01-12 11:00:24</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>5082</td>
+            <td>linguistics&nrc</td>
+            <td>20</td>
+            <td>gb</td>
+            <td>['joy' 'anger' 'annoyance' 'negative_anticipation_including_pessimism'
+ 'neg. surprise' 'pos. surprise' 'disgust' 'fear' 'no emotion' 'guilt'
+ 'sadness' 'positive_anticipation_including_optimism']</td>
+            <td>12 emotions</td>
+            <td>F1: 0.4557; Accuracy: 0.4558; Precision = 0.5551; Recall = 0.4558, AUC: 0.8488</td>
+            <td>F1: 0.2259; Accuracy: 0.2507; Precision = 0.2343; Recall = 0.2507, AUC: 0.679</td>
+            <td>{"anger": "ROC: 0.8391, F1: 0.4784, Precision: 0.4399, Recall: 0.5242", "annoyance": "ROC: 0.8621, F1: 0.4237, Precision: 0.8721, Recall: 0.2799", "disgust": "ROC: 0.872, F1: 0.4367, Precision: 0.8734, Recall: 0.2911", "fear": "ROC: 0.8357, F1: 0.4947, Precision: 0.506, Recall: 0.4839", "guilt": "ROC: 0.9432, F1: 0.6667, Precision: 0.9623, Recall: 0.51", "joy": "ROC: 0.8622, F1: 0.4938, Precision: 0.4125, Recall: 0.615", "neg. surprise": "ROC: 0.8086, F1: 0.4232, Precision: 0.3182, Recall: 0.6315", "negative_anticipation_including_pessimism": "ROC: 0.8872, F1: 0.4259, Precision: 0.8358, Recall: 0.2857", "no emotion": "ROC: 0.8779, F1: 0.4356, Precision: 0.5263, Recall: 0.3715", "pos. surprise": "ROC: 0.8387, F1: 0.4355, Precision: 0.4601, Recall: 0.4134", "positive_anticipation_including_optimism": "ROC: 0.8659, F1: 0.4, Precision: 0.92, Recall: 0.2556", "sadness": "ROC: 0.8382, F1: 0.4545, Precision: 0.5983, Recall: 0.3665"}</td>
+            <td>{"anger": "ROC: 0.6609, F1: 0.2248, Precision: 0.2117, Recall: 0.2397", "annoyance": "ROC: 0.5959, F1: 0.023, Precision: 0.04, Recall: 0.0161", "disgust": "ROC: 0.6289, F1: 0.0556, Precision: 0.125, Recall: 0.0357", "fear": "ROC: 0.7118, F1: 0.3529, Precision: 0.375, Recall: 0.3333", "guilt": "ROC: 0.7015, F1: 0.1212, Precision: 0.25, Recall: 0.08", "joy": "ROC: 0.8123, F1: 0.3608, Precision: 0.293, Recall: 0.4694", "neg. surprise": "ROC: 0.6193, F1: 0.299, Precision: 0.2176, Recall: 0.4774", "negative_anticipation_including_pessimism": "ROC: 0.6038, F1: 0.0339, Precision: 0.1111, Recall: 0.02", "no emotion": "ROC: 0.7458, F1: 0.224, Precision: 0.2692, Recall: 0.1918", "pos. surprise": "ROC: 0.7118, F1: 0.2618, Precision: 0.2747, Recall: 0.25", "positive_anticipation_including_optimism": "ROC: 0.6223, F1: 0.0, Precision: 0.0, Recall: 0.0", "sadness": "ROC: 0.6791, F1: 0.2405, Precision: 0.3393, Recall: 0.1863"}</td>
+        </tr>
+        

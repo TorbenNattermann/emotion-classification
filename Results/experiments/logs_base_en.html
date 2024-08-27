@@ -1,0 +1,195 @@
+
+        <table border='1'>
+            <tr>
+                <th>Date</th>
+                <th>Data</th>
+                <th>Samples</th>
+                <th>Features</th>
+                <th>N_features</th>
+                <th>Model</th>
+                <th>Label</th>
+                <th>N_label</th>
+                <th>Train_global</th>
+                <th>Val_global</th>
+                <th>AUC Train_local</th>
+                <th>AUC Val_local</th>
+            </tr>
+    
+
+        <tr>
+            <td>2024-07-22 13:56:05</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>linguistics</td>
+            <td>4</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.2418;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.2473;<br><strong style="color: #FF0000;">Precision</strong> = 0.2488;<br><strong>Recall</strong> = 0.2473,<br><strong>AUC</strong>: 0.561</td>
+            <td><strong>F1</strong>: 0.2013;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.2142;<br><strong style="color: #FF0000;">Precision</strong> = 0.209;<br><strong>Recall</strong> = 0.2142,<br><strong>AUC</strong>: 0.5311</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.6345, <span style="color: #006400;">F1</span>: 0.3594, <span style="color: #FF0000;">Precision</span>: 0.3249, <span style="color: #006400;">Recall</span>: 0.4021"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.5521, <span style="color: #006400;">F1</span>: 0.2155, <span style="color: #FF0000;">Precision</span>: 0.2115, <span style="color: #006400;">Recall</span>: 0.2196"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.5271, <span style="color: #006400;">F1</span>: 0.1841, <span style="color: #FF0000;">Precision</span>: 0.2778, <span style="color: #006400;">Recall</span>: 0.1377"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.5245, <span style="color: #006400;">F1</span>: 0.2084, <span style="color: #FF0000;">Precision</span>: 0.1955, <span style="color: #006400;">Recall</span>: 0.2232"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.5562, <span style="color: #006400;">F1</span>: 0.2298, <span style="color: #FF0000;">Precision</span>: 0.2165, <span style="color: #006400;">Recall</span>: 0.2448"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.6322, <span style="color: #006400;">F1</span>: 0.3437, <span style="color: #FF0000;">Precision</span>: 0.2764, <span style="color: #006400;">Recall</span>: 0.4545"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.5155, <span style="color: #006400;">F1</span>: 0.1875, <span style="color: #FF0000;">Precision</span>: 0.1951, <span style="color: #006400;">Recall</span>: 0.1805"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.4828, <span style="color: #006400;">F1</span>: 0.1848, <span style="color: #FF0000;">Precision</span>: 0.2698, <span style="color: #006400;">Recall</span>: 0.1405"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.5043, <span style="color: #006400;">F1</span>: 0.152, <span style="color: #FF0000;">Precision</span>: 0.1354, <span style="color: #006400;">Recall</span>: 0.1733"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.5083, <span style="color: #006400;">F1</span>: 0.1053, <span style="color: #FF0000;">Precision</span>: 0.1286, <span style="color: #006400;">Recall</span>: 0.0891"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-22 14:10:25</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>tfidf_1000_dims</td>
+            <td>1000</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9483;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9483;<br><strong style="color: #FF0000;">Precision</strong> = 0.9485;<br><strong>Recall</strong> = 0.9483,<br><strong>AUC</strong>: 0.9944</td>
+            <td><strong>F1</strong>: 0.4664;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.4664;<br><strong style="color: #FF0000;">Precision</strong> = 0.4678;<br><strong>Recall</strong> = 0.4664,<br><strong>AUC</strong>: 0.7366</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9949, <span style="color: #006400;">F1</span>: 0.9695, <span style="color: #FF0000;">Precision</span>: 0.9788, <span style="color: #006400;">Recall</span>: 0.9604"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9954, <span style="color: #006400;">F1</span>: 0.9723, <span style="color: #FF0000;">Precision</span>: 0.9703, <span style="color: #006400;">Recall</span>: 0.9744"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9934, <span style="color: #006400;">F1</span>: 0.9376, <span style="color: #FF0000;">Precision</span>: 0.9204, <span style="color: #006400;">Recall</span>: 0.9555"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.9954, <span style="color: #006400;">F1</span>: 0.9075, <span style="color: #FF0000;">Precision</span>: 0.914, <span style="color: #006400;">Recall</span>: 0.9011"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.9932, <span style="color: #006400;">F1</span>: 0.9437, <span style="color: #FF0000;">Precision</span>: 0.9504, <span style="color: #006400;">Recall</span>: 0.9371"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.7531, <span style="color: #006400;">F1</span>: 0.5, <span style="color: #FF0000;">Precision</span>: 0.5225, <span style="color: #006400;">Recall</span>: 0.4793"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.7365, <span style="color: #006400;">F1</span>: 0.5211, <span style="color: #FF0000;">Precision</span>: 0.5312, <span style="color: #006400;">Recall</span>: 0.5113"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.7721, <span style="color: #006400;">F1</span>: 0.5039, <span style="color: #FF0000;">Precision</span>: 0.4745, <span style="color: #006400;">Recall</span>: 0.5372"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.6447, <span style="color: #006400;">F1</span>: 0.28, <span style="color: #FF0000;">Precision</span>: 0.28, <span style="color: #006400;">Recall</span>: 0.28"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.7427, <span style="color: #006400;">F1</span>: 0.4478, <span style="color: #FF0000;">Precision</span>: 0.45, <span style="color: #006400;">Recall</span>: 0.4455"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-22 14:23:33</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>nrc</td>
+            <td>30</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.6209;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.6316;<br><strong style="color: #FF0000;">Precision</strong> = 0.6494;<br><strong>Recall</strong> = 0.6316,<br><strong>AUC</strong>: 0.8655</td>
+            <td><strong>F1</strong>: 0.4126;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.4319;<br><strong style="color: #FF0000;">Precision</strong> = 0.417;<br><strong>Recall</strong> = 0.4319,<br><strong>AUC</strong>: 0.6989</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.8813, <span style="color: #006400;">F1</span>: 0.6679, <span style="color: #FF0000;">Precision</span>: 0.6047, <span style="color: #006400;">Recall</span>: 0.7458"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.8566, <span style="color: #006400;">F1</span>: 0.6107, <span style="color: #FF0000;">Precision</span>: 0.6529, <span style="color: #006400;">Recall</span>: 0.5736"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.8923, <span style="color: #006400;">F1</span>: 0.6903, <span style="color: #FF0000;">Precision</span>: 0.5927, <span style="color: #006400;">Recall</span>: 0.8263"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.8258, <span style="color: #006400;">F1</span>: 0.4756, <span style="color: #FF0000;">Precision</span>: 0.7673, <span style="color: #006400;">Recall</span>: 0.3446"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.8607, <span style="color: #006400;">F1</span>: 0.6232, <span style="color: #FF0000;">Precision</span>: 0.6606, <span style="color: #006400;">Recall</span>: 0.5897"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.7383, <span style="color: #006400;">F1</span>: 0.5039, <span style="color: #FF0000;">Precision</span>: 0.4745, <span style="color: #006400;">Recall</span>: 0.5372"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.714, <span style="color: #006400;">F1</span>: 0.4297, <span style="color: #FF0000;">Precision</span>: 0.4472, <span style="color: #006400;">Recall</span>: 0.4135"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.7886, <span style="color: #006400;">F1</span>: 0.5524, <span style="color: #FF0000;">Precision</span>: 0.4788, <span style="color: #006400;">Recall</span>: 0.6529"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.524, <span style="color: #006400;">F1</span>: 0.1443, <span style="color: #FF0000;">Precision</span>: 0.3182, <span style="color: #006400;">Recall</span>: 0.0933"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.6541, <span style="color: #006400;">F1</span>: 0.3122, <span style="color: #FF0000;">Precision</span>: 0.3077, <span style="color: #006400;">Recall</span>: 0.3168"</td>
+        </tr>
+            
+        <tr>
+            <td>2024-07-22 17:43:18</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>tfidf_1000_dims&nrc</td>
+            <td>1030</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9453;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9456;<br><strong style="color: #FF0000;">Precision</strong> = 0.9477;<br><strong>Recall</strong> = 0.9456,<br><strong>AUC</strong>: 0.9936</td>
+            <td><strong>F1</strong>: 0.48;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.4864;<br><strong style="color: #FF0000;">Precision</strong> = 0.4809;<br><strong>Recall</strong> = 0.4864,<br><strong>AUC</strong>: 0.7634</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9964, <span style="color: #006400;">F1</span>: 0.9704, <span style="color: #FF0000;">Precision</span>: 0.985, <span style="color: #006400;">Recall</span>: 0.9562"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9952, <span style="color: #006400;">F1</span>: 0.966, <span style="color: #FF0000;">Precision</span>: 0.9639, <span style="color: #006400;">Recall</span>: 0.968"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9876, <span style="color: #006400;">F1</span>: 0.9308, <span style="color: #FF0000;">Precision</span>: 0.8838, <span style="color: #006400;">Recall</span>: 0.9831"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.9941, <span style="color: #006400;">F1</span>: 0.9003, <span style="color: #FF0000;">Precision</span>: 0.9675, <span style="color: #006400;">Recall</span>: 0.8418"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.9947, <span style="color: #006400;">F1</span>: 0.9479, <span style="color: #FF0000;">Precision</span>: 0.9424, <span style="color: #006400;">Recall</span>: 0.9534"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.7824, <span style="color: #006400;">F1</span>: 0.5145, <span style="color: #FF0000;">Precision</span>: 0.5167, <span style="color: #006400;">Recall</span>: 0.5124"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.7721, <span style="color: #006400;">F1</span>: 0.5333, <span style="color: #FF0000;">Precision</span>: 0.5574, <span style="color: #006400;">Recall</span>: 0.5113"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.8152, <span style="color: #006400;">F1</span>: 0.56, <span style="color: #FF0000;">Precision</span>: 0.5, <span style="color: #006400;">Recall</span>: 0.6364"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.6567, <span style="color: #006400;">F1</span>: 0.272, <span style="color: #FF0000;">Precision</span>: 0.34, <span style="color: #006400;">Recall</span>: 0.2267"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.7465, <span style="color: #006400;">F1</span>: 0.4272, <span style="color: #FF0000;">Precision</span>: 0.419, <span style="color: #006400;">Recall</span>: 0.4356"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-22 17:49:21</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>ada&tfidf_1000_dims</td>
+            <td>2536</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9873;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9873;<br><strong style="color: #FF0000;">Precision</strong> = 0.9874;<br><strong>Recall</strong> = 0.9873,<br><strong>AUC</strong>: 0.9997</td>
+            <td><strong>F1</strong>: 0.6573;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.6697;<br><strong style="color: #FF0000;">Precision</strong> = 0.6614;<br><strong>Recall</strong> = 0.6697,<br><strong>AUC</strong>: 0.9011</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9998, <span style="color: #006400;">F1</span>: 0.9886, <span style="color: #FF0000;">Precision</span>: 0.9855, <span style="color: #006400;">Recall</span>: 0.9917"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9998, <span style="color: #006400;">F1</span>: 0.9883, <span style="color: #FF0000;">Precision</span>: 0.9852, <span style="color: #006400;">Recall</span>: 0.9915"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9996, <span style="color: #006400;">F1</span>: 0.9905, <span style="color: #FF0000;">Precision</span>: 0.9853, <span style="color: #006400;">Recall</span>: 0.9958"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9857, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 0.9718"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.9991, <span style="color: #006400;">F1</span>: 0.9825, <span style="color: #FF0000;">Precision</span>: 0.9836, <span style="color: #006400;">Recall</span>: 0.9814"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9101, <span style="color: #006400;">F1</span>: 0.7209, <span style="color: #FF0000;">Precision</span>: 0.6788, <span style="color: #006400;">Recall</span>: 0.7686"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.8996, <span style="color: #006400;">F1</span>: 0.6769, <span style="color: #FF0000;">Precision</span>: 0.6929, <span style="color: #006400;">Recall</span>: 0.6617"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.952, <span style="color: #006400;">F1</span>: 0.7658, <span style="color: #FF0000;">Precision</span>: 0.6959, <span style="color: #006400;">Recall</span>: 0.8512"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.832, <span style="color: #006400;">F1</span>: 0.386, <span style="color: #FF0000;">Precision</span>: 0.5641, <span style="color: #006400;">Recall</span>: 0.2933"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.8829, <span style="color: #006400;">F1</span>: 0.6269, <span style="color: #FF0000;">Precision</span>: 0.63, <span style="color: #006400;">Recall</span>: 0.6238"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-22 17:52:24</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>ada&tfidf_1000_dims&nrc</td>
+            <td>2566</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9873;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9873;<br><strong style="color: #FF0000;">Precision</strong> = 0.9874;<br><strong>Recall</strong> = 0.9873,<br><strong>AUC</strong>: 0.9997</td>
+            <td><strong>F1</strong>: 0.667;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.6806;<br><strong style="color: #FF0000;">Precision</strong> = 0.6732;<br><strong>Recall</strong> = 0.6806,<br><strong>AUC</strong>: 0.9015</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9998, <span style="color: #006400;">F1</span>: 0.9886, <span style="color: #FF0000;">Precision</span>: 0.9855, <span style="color: #006400;">Recall</span>: 0.9917"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9998, <span style="color: #006400;">F1</span>: 0.9883, <span style="color: #FF0000;">Precision</span>: 0.9852, <span style="color: #006400;">Recall</span>: 0.9915"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9996, <span style="color: #006400;">F1</span>: 0.9905, <span style="color: #FF0000;">Precision</span>: 0.9853, <span style="color: #006400;">Recall</span>: 0.9958"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9857, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 0.9718"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.9991, <span style="color: #006400;">F1</span>: 0.9825, <span style="color: #FF0000;">Precision</span>: 0.9836, <span style="color: #006400;">Recall</span>: 0.9814"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9092, <span style="color: #006400;">F1</span>: 0.7308, <span style="color: #FF0000;">Precision</span>: 0.6835, <span style="color: #006400;">Recall</span>: 0.7851"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9007, <span style="color: #006400;">F1</span>: 0.6943, <span style="color: #FF0000;">Precision</span>: 0.697, <span style="color: #006400;">Recall</span>: 0.6917"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.952, <span style="color: #006400;">F1</span>: 0.7803, <span style="color: #FF0000;">Precision</span>: 0.7203, <span style="color: #006400;">Recall</span>: 0.8512"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.8348, <span style="color: #006400;">F1</span>: 0.3818, <span style="color: #FF0000;">Precision</span>: 0.6, <span style="color: #006400;">Recall</span>: 0.28"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.8823, <span style="color: #006400;">F1</span>: 0.6305, <span style="color: #FF0000;">Precision</span>: 0.6275, <span style="color: #006400;">Recall</span>: 0.6337"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-23 10:26:34</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>ada&nrc</td>
+            <td>1566</td>
+            <td>nn</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.8322;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.8317;<br><strong style="color: #FF0000;">Precision</strong> = 0.8385;<br><strong>Recall</strong> = 0.8317,<br><strong>AUC</strong>: 0.9736</td>
+            <td><strong>F1</strong>: 0.6647;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.6642;<br><strong style="color: #FF0000;">Precision</strong> = 0.6675;<br><strong>Recall</strong> = 0.6642,<br><strong>AUC</strong>: 0.8968</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9723, <span style="color: #006400;">F1</span>: 0.8045, <span style="color: #FF0000;">Precision</span>: 0.8732, <span style="color: #006400;">Recall</span>: 0.7458"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9619, <span style="color: #006400;">F1</span>: 0.8044, <span style="color: #FF0000;">Precision</span>: 0.7595, <span style="color: #006400;">Recall</span>: 0.855"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9913, <span style="color: #006400;">F1</span>: 0.9108, <span style="color: #FF0000;">Precision</span>: 0.9128, <span style="color: #006400;">Recall</span>: 0.9089"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.9694, <span style="color: #006400;">F1</span>: 0.7948, <span style="color: #FF0000;">Precision</span>: 0.7397, <span style="color: #006400;">Recall</span>: 0.8588"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.9718, <span style="color: #006400;">F1</span>: 0.8378, <span style="color: #FF0000;">Precision</span>: 0.8857, <span style="color: #006400;">Recall</span>: 0.7949"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9051, <span style="color: #006400;">F1</span>: 0.6812, <span style="color: #FF0000;">Precision</span>: 0.7222, <span style="color: #006400;">Recall</span>: 0.6446"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9044, <span style="color: #006400;">F1</span>: 0.7, <span style="color: #FF0000;">Precision</span>: 0.6667, <span style="color: #006400;">Recall</span>: 0.7368"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9507, <span style="color: #006400;">F1</span>: 0.7572, <span style="color: #FF0000;">Precision</span>: 0.7541, <span style="color: #006400;">Recall</span>: 0.7603"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.8089, <span style="color: #006400;">F1</span>: 0.4744, <span style="color: #FF0000;">Precision</span>: 0.4568, <span style="color: #006400;">Recall</span>: 0.4933"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.8778, <span style="color: #006400;">F1</span>: 0.6289, <span style="color: #FF0000;">Precision</span>: 0.6559, <span style="color: #006400;">Recall</span>: 0.604"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-23 16:47:47</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>ada&nrc</td>
+            <td>1566</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9991;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9991;<br><strong style="color: #FF0000;">Precision</strong> = 0.9991;<br><strong>Recall</strong> = 0.9991,<br><strong>AUC</strong>: 1.0</td>
+            <td><strong>F1</strong>: 0.7008;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.7042;<br><strong style="color: #FF0000;">Precision</strong> = 0.7;<br><strong>Recall</strong> = 0.7042,<br><strong>AUC</strong>: 0.9064</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9979, <span style="color: #FF0000;">Precision</span>: 0.9979, <span style="color: #006400;">Recall</span>: 0.9979"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 1.0, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 1.0, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 1.0, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9977, <span style="color: #FF0000;">Precision</span>: 0.9977, <span style="color: #006400;">Recall</span>: 0.9977"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9206, <span style="color: #006400;">F1</span>: 0.7273, <span style="color: #FF0000;">Precision</span>: 0.697, <span style="color: #006400;">Recall</span>: 0.7603"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9038, <span style="color: #006400;">F1</span>: 0.7191, <span style="color: #FF0000;">Precision</span>: 0.7164, <span style="color: #006400;">Recall</span>: 0.7218"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9536, <span style="color: #006400;">F1</span>: 0.7984, <span style="color: #FF0000;">Precision</span>: 0.7795, <span style="color: #006400;">Recall</span>: 0.8182"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.838, <span style="color: #006400;">F1</span>: 0.5185, <span style="color: #FF0000;">Precision</span>: 0.5833, <span style="color: #006400;">Recall</span>: 0.4667"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.887, <span style="color: #006400;">F1</span>: 0.6633, <span style="color: #FF0000;">Precision</span>: 0.6735, <span style="color: #006400;">Recall</span>: 0.6535"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-07-23 16:50:25</td>
+            <td>GNE_SEM_GER dataset</td>
+            <td>2755</td>
+            <td>ada</td>
+            <td>1536</td>
+            <td>svm</td>
+            <td>['joy' 'fear' 'anger' 'sadness' 'no emotion']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9991;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9991;<br><strong style="color: #FF0000;">Precision</strong> = 0.9991;<br><strong>Recall</strong> = 0.9991,<br><strong>AUC</strong>: 1.0</td>
+            <td><strong>F1</strong>: 0.6985;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.7024;<br><strong style="color: #FF0000;">Precision</strong> = 0.6972;<br><strong>Recall</strong> = 0.7024,<br><strong>AUC</strong>: 0.9066</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9979, <span style="color: #FF0000;">Precision</span>: 0.9979, <span style="color: #006400;">Recall</span>: 0.9979"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 1.0, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 1.0, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 1.0, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9977, <span style="color: #FF0000;">Precision</span>: 0.9977, <span style="color: #006400;">Recall</span>: 0.9977"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9229, <span style="color: #006400;">F1</span>: 0.7381, <span style="color: #FF0000;">Precision</span>: 0.7099, <span style="color: #006400;">Recall</span>: 0.7686"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9033, <span style="color: #006400;">F1</span>: 0.7273, <span style="color: #FF0000;">Precision</span>: 0.7328, <span style="color: #006400;">Recall</span>: 0.7218"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9532, <span style="color: #006400;">F1</span>: 0.792, <span style="color: #FF0000;">Precision</span>: 0.7674, <span style="color: #006400;">Recall</span>: 0.8182"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.8364, <span style="color: #006400;">F1</span>: 0.4889, <span style="color: #FF0000;">Precision</span>: 0.55, <span style="color: #006400;">Recall</span>: 0.44"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.8875, <span style="color: #006400;">F1</span>: 0.6567, <span style="color: #FF0000;">Precision</span>: 0.66, <span style="color: #006400;">Recall</span>: 0.6535"</td>
+        </tr>
+
+        
+        <tr>
+            <td>2024-08-16 14:28:17</td>
+            <td>Baseline TEST English</td>
+            <td>3462</td>
+            <td>tfidf_1000_dims&nrc</td>
+            <td>1030</td>
+            <td>svm</td>
+            <td>['anger' 'joy' 'no emotion' 'sadness' 'fear']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9779;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9779;<br><strong style="color: #FF0000;">Precision</strong> = 0.9779;<br><strong>Recall</strong> = 0.9779,<br><strong>AUC</strong>: 0.998</td>
+            <td><strong>F1</strong>: 0.4834;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.4851;<br><strong style="color: #FF0000;">Precision</strong> = 0.483;<br><strong>Recall</strong> = 0.4851,<br><strong>AUC</strong>: 0.7681</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9991, <span style="color: #006400;">F1</span>: 0.9917, <span style="color: #FF0000;">Precision</span>: 0.9917, <span style="color: #006400;">Recall</span>: 0.9917"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.9982, <span style="color: #006400;">F1</span>: 0.9909, <span style="color: #FF0000;">Precision</span>: 0.9884, <span style="color: #006400;">Recall</span>: 0.9934"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9956, <span style="color: #006400;">F1</span>: 0.9704, <span style="color: #FF0000;">Precision</span>: 0.9729, <span style="color: #006400;">Recall</span>: 0.968"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.998, <span style="color: #006400;">F1</span>: 0.9502, <span style="color: #FF0000;">Precision</span>: 0.9447, <span style="color: #006400;">Recall</span>: 0.9557"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.999, <span style="color: #006400;">F1</span>: 0.9782, <span style="color: #FF0000;">Precision</span>: 0.9829, <span style="color: #006400;">Recall</span>: 0.9736"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.8049, <span style="color: #006400;">F1</span>: 0.5172, <span style="color: #FF0000;">Precision</span>: 0.5208, <span style="color: #006400;">Recall</span>: 0.5137"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.7863, <span style="color: #006400;">F1</span>: 0.5615, <span style="color: #FF0000;">Precision</span>: 0.5669, <span style="color: #006400;">Recall</span>: 0.5562"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.8325, <span style="color: #006400;">F1</span>: 0.5363, <span style="color: #FF0000;">Precision</span>: 0.509, <span style="color: #006400;">Recall</span>: 0.5667"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.6848, <span style="color: #006400;">F1</span>: 0.3486, <span style="color: #FF0000;">Precision</span>: 0.3762, <span style="color: #006400;">Recall</span>: 0.3248"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.7071, <span style="color: #006400;">F1</span>: 0.4118, <span style="color: #FF0000;">Precision</span>: 0.4058, <span style="color: #006400;">Recall</span>: 0.4179"</td>
+        </tr>
+        
+        <tr>
+            <td>2024-08-16 14:36:18</td>
+            <td>Final Model TEST English</td>
+            <td>3462</td>
+            <td>ada&nrc</td>
+            <td>1566</td>
+            <td>svm</td>
+            <td>['anger' 'joy' 'no emotion' 'sadness' 'fear']</td>
+            <td>emotion    5
+dtype: int64 classes</td>
+            <td><strong>F1</strong>: 0.9985;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.9985;<br><strong style="color: #FF0000;">Precision</strong> = 0.9985;<br><strong>Recall</strong> = 0.9985,<br><strong>AUC</strong>: 0.9998</td>
+            <td><strong>F1</strong>: 0.6834;<br><strong style="color: #FF0000;">Accuracy</strong>: 0.6902;<br><strong style="color: #FF0000;">Precision</strong> = 0.69;<br><strong>Recall</strong> = 0.6902,<br><strong>AUC</strong>: 0.9161</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9983, <span style="color: #FF0000;">Precision</span>: 0.9983, <span style="color: #006400;">Recall</span>: 0.9983"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9992, <span style="color: #FF0000;">Precision</span>: 1.0, <span style="color: #006400;">Recall</span>: 0.9983"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9999, <span style="color: #006400;">F1</span>: 0.9992, <span style="color: #FF0000;">Precision</span>: 0.9983, <span style="color: #006400;">Recall</span>: 1.0"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.999, <span style="color: #006400;">F1</span>: 0.9977, <span style="color: #FF0000;">Precision</span>: 0.9977, <span style="color: #006400;">Recall</span>: 0.9977"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 1.0, <span style="color: #006400;">F1</span>: 0.9981, <span style="color: #FF0000;">Precision</span>: 0.9981, <span style="color: #006400;">Recall</span>: 0.9981"</td>
+            <td>"<strong>anger</strong>": "<span style="color: #006400;">ROC</span>: 0.9322, <span style="color: #006400;">F1</span>: 0.7108, <span style="color: #FF0000;">Precision</span>: 0.6344, <span style="color: #006400;">Recall</span>: 0.8082"<br>"<strong>fear</strong>": "<span style="color: #006400;">ROC</span>: 0.899, <span style="color: #006400;">F1</span>: 0.6906, <span style="color: #FF0000;">Precision</span>: 0.7211, <span style="color: #006400;">Recall</span>: 0.6625"<br>"<strong>joy</strong>": "<span style="color: #006400;">ROC</span>: 0.9595, <span style="color: #006400;">F1</span>: 0.7975, <span style="color: #FF0000;">Precision</span>: 0.759, <span style="color: #006400;">Recall</span>: 0.84"<br>"<strong>no emotion</strong>": "<span style="color: #006400;">ROC</span>: 0.8672, <span style="color: #006400;">F1</span>: 0.5155, <span style="color: #FF0000;">Precision</span>: 0.6494, <span style="color: #006400;">Recall</span>: 0.4274"<br>"<strong>sadness</strong>": "<span style="color: #006400;">ROC</span>: 0.9132, <span style="color: #006400;">F1</span>: 0.6642, <span style="color: #FF0000;">Precision</span>: 0.6718, <span style="color: #006400;">Recall</span>: 0.6567"</td>
+        </tr>
+        
